@@ -45,7 +45,6 @@ after "npm install" has been called on the root directory.
 Integration Tests shall observe the following:
 1. Integration Tests shall not modify tfvc nor git repositories.
 2. Integration Tests shall not modify Build nor Release pipelines.
-3. Integration Tests shall only be ran when connected to Orange network.
-4. Integration Tests shall modify their own unique files on the file system.
-5. Integration Tests shall keep an original file they modify in the "files" directory.
-6. Integration Tests shall only modify from the "_files" directory to preserve tests over time.
+3. Integration Tests shall modify their own unique files on the file system.
+4. Integration Tests shall keep an original file they modify in the "files" directory.
+5. Integration Tests shall only modify from the "_files" directory to preserve tests over time.
