@@ -1,7 +1,7 @@
 {
 	"name": "azure-devops-node-utilities-tests",
 	"description": "Tests for azure-devops-node-utilities",
-	"version": "4.0.2",
+	"version": "4.0.3",
 	"main": "runner/runner.Tests.js",
 	"scripts": {
 		"test": "tsc && npm run copy",
