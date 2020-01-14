@@ -1,0 +1,31 @@
+{
+	"name": "azure-devops-node-utilities-tests",
+	"description": "Tests for azure-devops-node-utilities",
+	"version": "3.0.1",
+	"main": "runner/runner.Tests.js",
+	"scripts": {
+		"test": "tsc && npm run copy",
+		"copy": "xcopy files _files /E /Y /i && npm run units",
+		"units": "mocha VersionFile.UnitTests.js && mocha Common.UnitTests.js && mocha CheckIn.UnitTests.js",
+		"integration": "mocha VersionFile.IntegrationTests.js && mocha Common.IntegrationTests.js && mocha CheckIn.IntegrationTests.js"
+	},
+	"repository": {},
+	"author": "DCK Tools",
+	"contributors": [
+		"Donabed C. Kopoian <dckopoian@gmail.com>"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"azure-devops-node-api": "^6.6.2",
+		"azure-pipelines-task-lib": "^2.8.0",
+		"sync-request": "3.0.1",
+		"azure-devops-node-utilities": "file:../lib"
+	},
+	"devDependencies": {
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.6.2",
+		"@types/q": "^1.5.2",
+		"mocha": "^6.2.0",
+		"typescript": "^3.6.2"
+	}
+}

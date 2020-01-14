@@ -1,0 +1,40 @@
+{
+	"name": "azure-devops-node-utilities",
+	"description": "Utilities for use with azure-devops-node-api and azure-pipelines-task-lib.",
+	"version": "3.0.1",
+	"main": "Common.js",
+	"types": "Common.d.ts",
+	"scripts": {
+		"prepare": "tsc && npm run copy",
+		"copy": "copy package.json lib && copy README.md lib && copy LICENSE.md lib",
+		"test": "cd ..\\tests && npm install && npm run test",
+		"prepublishOnly": "npm test"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"keywords": [
+		"azure",
+		"devops",
+		"node",
+		"api",
+		"utilities"
+	],
+	"author": "DCK Tools",
+	"contributors": [
+		"Donabed C. Kopoian <dckopoian@gmail.com>"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"azure-devops-node-api": "^6.6.2",
+		"azure-pipelines-task-lib": "^2.8.0"
+	},
+	"devDependencies": {
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.6.2",
+		"@types/q": "^1.5.2",
+		"mocha": "^6.2.0",
+		"typescript": "^3.6.2"
+	}
+}
