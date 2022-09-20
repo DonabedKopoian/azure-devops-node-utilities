@@ -1,7 +1,7 @@
 {
 	"name": "azure-devops-node-utilities",
 	"description": "Utilities for use with azure-devops-node-api and azure-pipelines-task-lib.",
-	"version": "4.0.3",
+	"version": "4.0.4",
 	"main": "Common.js",
 	"types": "Common.d.ts",
 	"scripts": {
@@ -34,7 +34,7 @@
 		"@types/mocha": "^5.2.7",
 		"@types/node": "^12.6.2",
 		"@types/q": "^1.5.2",
-		"mocha": "^6.2.0",
+		"mocha": "^10.0.0",
 		"typescript": "^3.6.2"
 	}
 }
