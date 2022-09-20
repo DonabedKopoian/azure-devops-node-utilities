@@ -3,6 +3,23 @@
 * Use ^3.0.0 for TFS 2018.
 * Use ^4.0.0 for ADOS 2019.
 
+## Vulnerability Notes ##
+This package has dependencies that contains known vulnerabilities
+in the following Microsoft Azure packages:
+* azure-devops-node-api 
+* azure-pipelines-task-lib.
+
+The TFS 2018 versions will not be updated at this time and Microsoft is no longer
+creating security patches for the Azure package versions that are necessary to function
+for TFS 2018.  Newer versions of the library will fail to function on TFS 2018.
+
+THe ADOS 2019/2020 versions will require breaking changes in order to resolve the vulnerabilities,
+and I currently have no means to test these components to validate that they remain functional
+after updating.
+
+Please run npm audit for the version you intend to use to determine if the vulnerabilities
+are deal breakers.
+
 # Components #
 
 ## CheckIn ##
