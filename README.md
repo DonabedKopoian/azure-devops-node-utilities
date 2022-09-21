@@ -4,10 +4,15 @@
 * Use ^4.0.0 for ADOS 2019.
 
 ## Vulnerability Notes ##
-This package has dependencies that contains known vulnerabilities
-in the following Microsoft Azure packages:
-* azure-devops-node-api 
+This package contains vulnerabilities from sub-packages that are
+referenced in the following Microsoft Azure packages:
+* azure-devops-node-api.
+  * underscore
+    * 2 High Vulnerabilities
 * azure-pipelines-task-lib.
+  * shelljs
+    * 1 High Vulnerability
+    * 1 Moderate Vulnerability
 
 The TFS 2018 versions will not be updated at this time and Microsoft is no longer
 creating security patches for the Azure package versions that are necessary to function
