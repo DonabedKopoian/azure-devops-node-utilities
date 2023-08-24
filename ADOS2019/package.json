@@ -28,7 +28,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"azure-devops-node-api": "^7.0.0",
-		"azure-pipelines-task-lib": "^2.8.0"
+		"azure-pipelines-task-lib": "^4.4.0"
 	},
 	"devDependencies": {
 		"@types/mocha": "^5.2.7",
